@@ -23,7 +23,7 @@ module.exports = {
   },
   production: {
     client: "pg",
-    connection: "postgres://sbldgolh:2Hd_xxJ35QLsi_GeT_0tjx7q_SUoc4iQ@otto.db.elephantsql.com/sbldgolh",
+    connection: process.env.DB_URL,
     migrations: {
       directory: "./database/migrations",
       tableName: "knex_migrations",
